@@ -1,7 +1,7 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f0f4f8;
-    color: #333;
+    background-color: #f0f4f8; /* Fundo branco claro */
+    color: #000; /* Cor do texto preta */
     margin: 0;
     padding: 0;
 }
