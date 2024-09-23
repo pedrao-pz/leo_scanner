@@ -1,9 +1,21 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f0f4f8; /* Fundo branco claro */
-    color: #000; /* Cor do texto preta */
+    background-color: #ffffff; /* Fundo claro padrão */
+    color: #000000; /* Texto preto padrão */
     margin: 0;
     padding: 0;
+}
+
+/* Detecta temas escuros e ajusta as cores */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #1e1e1e; /* Fundo escuro */
+        color: #ffffff; /* Texto branco */
+    }
+
+    .container {
+        background-color: #2e2e2e; /* Fundo da div container no modo escuro */
+    }
 }
 
 .container {
