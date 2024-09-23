@@ -119,19 +119,26 @@ li:hover {
     transform: scale(1.02);
 }
 
-.lista-compras,
 .historico-itens {
-    background-color: #333; /* Fundo escuro */
     color: #fff; /* Texto branco */
     transition: transform 0.3s; /* Suaviza a animação de aumento */
 }
 
-.lista-compras li:hover,
-.historico-itens li:hover {
+.historico-itens:hover {
     transform: scale(1.05);
     transition: transform 0.3s ease, background-color 0.3s ease;
     background-color: #f0f0f0; /* Ou qualquer cor que você preferir */
 }
+
+.lista-compras li {
+    border-bottom: 1px solid #4CAF50; /* Linha reta verde */
+    padding: 10px 0; /* Espaçamento vertical para os itens */
+}
+
+.lista-compras li:last-child {
+    border-bottom: none; /* Remove a linha do último item */
+}
+
 
 .lista-container h2 {
     text-align: center;
@@ -143,7 +150,14 @@ li:hover {
     background-color: #000; /* Fundo negro para a lista de compras */
     border-radius: 12px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Adicionando transição */
 }
+
+.lista-container h2:hover {
+    transform: scale(1.05); /* Aumenta ligeiramente o tamanho */
+    background-color: #181818; /* Alterar a cor de fundo ao passar o mouse */
+}
+
 
 .lista-compras li {
     border-bottom: 1px solid #444; /* Borda para separar os itens */
