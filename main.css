@@ -140,19 +140,32 @@ li:hover {
     margin-bottom: 20px;
     margin-top: 30px;
     padding: 20px;
-    background: #ffffff;
+    background-color: #000; /* Fundo negro para a lista de compras */
     border-radius: 12px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.lista-compras li {
+    border-bottom: 1px solid #444; /* Borda para separar os itens */
 }
 
 .lista-container input {
     width: calc(100% - 22px);
     padding: 10px;
     margin-bottom: 10px;
-    border: 2px solid #4CAF50;
+    border: 2px solid #4CAF50; /* Borda verde */
     border-radius: 8px;
     font-size: 16px;
+    background-color: #333; /* Fundo escuro */
+    color: #fff; /* Cor do texto em branco */
+    box-sizing: border-box; /* Para incluir padding e border na largura total */
 }
+
+/* Se quiser ajustar a borda para que fique consistente */
+.lista-container input:focus {
+    border: 2px solid #4CAF50; /* Borda verde ao focar */
+}
+
 
 .lista-container button {
     width: 100%;
