@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leo Scanner V1.0</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Leo Scanner <span style="font-size: 0.5em;">V1.0</span></h1>
+        <hr>
+        <div class="scanner-container">
+            <div class="scanner" id="scanner"></div>
+            <button class="botao-adicionar" onclick="adicionarItem()">Adicionar Item</button>
+        </div>
+        
+        <ul id="lista"></ul>
+
+        <div class="lista-container">
+            <h2>Lista de Compras</h2>
+            <input type="text" id="itemInput" placeholder="Digite o nome do item" />
+            <button class="botao-adicionar" onclick="adicionarItemLista()">Adicionar Item</button>
+            <ul id="listaCompras"></ul>
+        </div>
+
+        <h2>Histórico de Itens Escaneados</h2>
+        <ul id="historico"></ul>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
